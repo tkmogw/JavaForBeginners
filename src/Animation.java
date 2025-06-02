@@ -60,6 +60,7 @@ public class Animation extends MyFrame {
 		   //	  x-=5;
 		   //	   sleep(0.01);
 		   //	}
+		   
 		 //5-3
 		   // while(n<=2)
 			   
@@ -86,24 +87,60 @@ public class Animation extends MyFrame {
 	
 	
 		   // }
-		   //EX1
-		   while(true) {
-			   while (x<=70) {
+		   
+		   //ex1
+		   //	   while(true) {
+			   //	   while (x<=170) {
+				   //		      clear();
+				      //		   		    setColor(0,128,0);
+				      //		       fillRect (x,y,10,100);
+				       //		   	  x+=5;
+				   	//		   	
+				   	//	  	   sleep(0.01);
+			  	 //	   }
+			   //		   while (y<=200) {
+			   //			      clear();
+				      //		   		    setColor(0,28,0);
+				      //		       fillRect (x,y,10,100);
+				       //			   	  y+=5;
+			  	  
+				   	//		  	   sleep(0.01);
+				   	//	   }
+			   //		   while (x>=30) {
+			   //			      clear();
+			   //			   		    setColor(130,18,0);
+				   		 //			       fillRect (x,y,10,100);
+				   		 //			   	  x-=5;
+				   	//		  	  
+				   	//		  	   sleep(0.01);
+	//	   }
+	//		   while (y>=70) {
+//				      clear();
+//				   		    setColor(0,12,0);
+//				       fillRect (x,y,10,100);
+//				   	  y-=5;
+//			  	  
+//			  	   sleep(0.01);
+//		   }
+//	}
+		   //ex2
+		  while(true) {
+			  while (x<=170) {
 				      clear();
 				   		    setColor(0,128,0);
 				       fillRect (x,y,10,100);
 				   	  x+=5;
 				   	
 			  	   sleep(0.01);
-		   }
-			   while (y<=200) {
+		                         }
+			  while (y<=200) {
 				      clear();
 				   		    setColor(0,28,0);
 				       fillRect (x,y,10,100);
 				   	  y+=5;
 			  	  
 			  	   sleep(0.01);
-		   }
+                  	   }
 			   while (x>=30) {
 				      clear();
 				   		    setColor(130,18,0);
@@ -112,17 +149,24 @@ public class Animation extends MyFrame {
 			  	  
 			  	   sleep(0.01);
 		   }
-			   while (y>=70) {
+			   while (y<=400) {
 				      clear();
 				   		    setColor(0,12,0);
 				       fillRect (x,y,10,100);
 				   	  y+=5;
 			  	  
 			  	   sleep(0.01);
+			  	
 		   }
+			   x=30;
+			  y=100;
+		   }
+		  
+		   
+		  
 	}
+	//おまけ　勝てませんでした
 	
-}
 }
 
 
