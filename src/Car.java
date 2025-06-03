@@ -20,6 +20,7 @@ public class Car {
 		}
 		public void move() {
 			x+=vx;
+			y+=vy;
 		
 			
 		}
