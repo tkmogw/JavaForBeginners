@@ -1,5 +1,7 @@
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle implements KeyListener{
 
 	public Car(int x,int y,int vx,int vy)
 	{
@@ -14,12 +16,91 @@ public class Car extends Vehicle{
 			// TODO 自動生成されたメソッド・スタブ
 
 		}
+		@Override
+		public void keyTyped(KeyEvent e) {
+			// TODO 自動生成されたメソッド・スタブ
+			
+		}
+		@Override
+		public void keyPressed(KeyEvent e) {
+			// TODO 自動生成されたメソッド・スタブ
+			if (e.getKeyCode()==KeyEvent.VK_LEFT)
+			{
+				vx=-5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_RIGHT)
+			{
+				vx=5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_UP)
+			{
+				vy=-5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_DOWN)
+			{
+				vy=5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_A)
+			{
+				vx=-5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_D)
+			{
+				vx=5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_W)
+			{
+				vy=-5;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_S)
+			{
+				vy=5;
+			}
+		}
+			
+	
+		@Override
+		public void keyReleased(KeyEvent e) {
+			// TODO 自動生成されたメソッド・スタブ
+			vx=0;
+			if (e.getKeyCode()==KeyEvent.VK_LEFT)
+			{
+				vx=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_RIGHT)
+			{
+				vx=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_UP)
+			{
+				vy=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_DOWN)
+			{
+				vy=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_A)
+			{
+				vx=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_D)
+			{
+				vx=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_W)
+			{
+				vy=0;
+			}
+			if (e.getKeyCode()==KeyEvent.VK_S)
+			{
+				vy=0;
+			}
 		
 		// TODO 自動生成されたメソッド・スタブ
 
 	
 
-
+		}
 	}
 
 
