@@ -1,15 +1,11 @@
 
-public class Car {
+public class Car extends Vehicle{
 
-
-	int x,y,vx,vy;
-	   public Car(int x,int y,int vx,int vy)
-	   {
-		   this.x=x;
-		   this.y=y;
-		   this.vx=vx;
-		   this.vy=vy;
-	   }
+	public Car(int x,int y,int vx,int vy)
+	{
+		super(x,y,vx,vy);
+		
+	}
 		public void draw(MyFrame frame) {
 			frame.fillRect(x+10,y+20,50,30);
 			frame.fillRect(x-20,y+50,110,30);
@@ -18,12 +14,7 @@ public class Car {
 			// TODO 自動生成されたメソッド・スタブ
 
 		}
-		public void move() {
-			x+=vx;
-			y+=vy;
 		
-			
-		}
 		// TODO 自動生成されたメソッド・スタブ
 
 	
